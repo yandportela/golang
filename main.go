@@ -7,4 +7,6 @@ func main() {
 	nomes := [4]string{"Bruno", "Eduardo", "Pedro", "Vinicius"}
 	fmt.Println(idades)
 	fmt.Println(nomes)
+	nomes[3] = "Morales"
+	fmt.Println(nomes)
 }
