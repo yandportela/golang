@@ -22,9 +22,36 @@ func main() {
 	sort.Ints(idades)
 	fmt.Println(idades)
 	indice := sort.SearchInts(idades, 80)
-    fmt.Println(indice)
+	fmt.Println(indice)
 	//
 	nomes := []string{"Yan", "Pedro", "Vinicius", "Bruno", "Eduardo"}
 	sort.Strings(nomes)
 	fmt.Println(nomes)
-}	
+	//
+	x := 0
+
+	for x <= 5 {
+		fmt.Println(x)
+		x++
+	}
+	for i := 0; i <= 5; i++ {
+		fmt.Println("For 2: ", i)
+	}
+	for i := 0; i < len(nomes); i++ {
+		fmt.Println("For 3: ", nomes[i])
+	}
+	for index, value := range nomes {
+		fmt.Println("For 4: ", index, value)
+	}
+	for indice, valor := range idades {
+		fmt.Println("O", indice, "º é ", valor)
+	}
+	superherois := []string{"Deadpool", "Homem Aranha", "Batman"}
+
+	for index, value := range superherois {
+		fmt.Println("O", index, "º superheroi é ", value)
+	}
+	for i := 0; i < len(superherois); i++ {
+		fmt.Println(superherois[i])
+	}
+}
