@@ -9,7 +9,7 @@ func main() {
 	fmt.Println(nomes)
 	nomes[3] = "Morales"
 	fmt.Println(nomes)
-	// Slice
+	// Coxinha de frango
 	var score = [4]int{100, 200, 300, 400}
 	fmt.Println(score)
 	score[1] = 2
@@ -20,7 +20,7 @@ func main() {
 	fmt.Println(rangeTwo)
 	rangeThree := score[:3]
 	fmt.Println(rangeThree)
-
+	// Slice
 	var superherois = []string{"Deadpool", "Homem-Aranha", "Motoqueiro Fantasma"}
 	fmt.Println(superherois)
 	superherois = append(superherois, "Ben 10", "Ciborgue")
