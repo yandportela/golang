@@ -5,16 +5,29 @@ import (
 )
 
 func main() {
-	inteiros := [5]int{}
-	fmt.Println("Por favor, digite o primeiro número:")
-	fmt.Scan(&inteiros[0])
-	fmt.Println("Por favor, digite o segundo número:")
-	fmt.Scan(&inteiros[1])
-	fmt.Println("Por favor, digite o terceiro número:")
-	fmt.Scan(&inteiros[2])
-	fmt.Println("Por favor, digite o quarto número:")
-	fmt.Scan(&inteiros[3])
-	fmt.Println("Por favor, digite o quinto número:")
-	fmt.Scan(&inteiros[4])
-	fmt.Println("A soma dos números digitados é:", inteiros[0]+inteiros[1]+inteiros[2]+inteiros[3]+inteiros[4])
+	//age := 45
+	/*fmt.Println(age <= 50)
+	fmt.Println(age >= 50)
+	fmt.Println(age == 50)
+	fmt.Println(age != 50)
+	if age < 30 {
+		fmt.Println("Menor que 30")
+	} else if age < 40 {
+		fmt.Println("Menor que 40")
+	} else {
+		fmt.Println("Não é menor que 40")
+	}
+*/
+	nomes := []string{"Yan", "Maria", "Pedro", "Vinícius", "Eduardo"}
+	for index, valor := range nomes {
+		if index == 1 {
+			fmt.Println("Continue após a posição: ", index, "e valor ", valor)
+			continue
+		}
+		if index > 2 {
+			fmt.Println("Sair após", index)
+			break 
+		}
+		fmt.Println("Valor: ", valor)
+	}
 }
