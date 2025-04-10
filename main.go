@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	inteiros := []int{}
+	inteiros := [5]int{}
 	fmt.Println("Por favor, digite o primeiro número:")
 	fmt.Scan(&inteiros[0])
 	fmt.Println("Por favor, digite o segundo número:")
