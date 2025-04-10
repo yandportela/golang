@@ -5,29 +5,24 @@ import (
 )
 
 func main() {
-	//age := 45
-	/*fmt.Println(age <= 50)
-	fmt.Println(age >= 50)
-	fmt.Println(age == 50)
-	fmt.Println(age != 50)
-	if age < 30 {
-		fmt.Println("Menor que 30")
-	} else if age < 40 {
-		fmt.Println("Menor que 40")
-	} else {
-		fmt.Println("Não é menor que 40")
+	var idade int
+	fmt.Println("Por favor digite sua idade:")
+	fmt.Scan(&idade)
+	if idade < 0 || idade > 120 {
+	for {
+		fmt.Println("Idade inválida.")
+		fmt.Println("Por favor digite uma idade válida:")
+		fmt.Scan(&idade)
+		if (idade > 0 && idade < 120) {
+			break
+		}
 	}
-*/
-	nomes := []string{"Yan", "Maria", "Pedro", "Vinícius", "Eduardo"}
-	for index, valor := range nomes {
-		if index == 1 {
-			fmt.Println("Continue após a posição: ", index, "e valor ", valor)
-			continue
-		}
-		if index > 2 {
-			fmt.Println("Sair após", index)
-			break 
-		}
-		fmt.Println("Valor: ", valor)
+	}
+	if idade < 18 {
+		fmt.Println("Você é menor de idade.")
+	}	else if idade >= 18 && idade < 60 {
+		fmt.Println("Você é maior de idade.")
+	} else {
+		fmt.Println("Você é idoso.")
 	}
 }
